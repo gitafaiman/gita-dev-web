@@ -1,68 +1,225 @@
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
+@layer base {
   :root {
-    color: #213547;
-    background-color: #ffffff;
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+    --primary: 240 5.9% 10%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 240 4.8% 95.9%;
+    --secondary-foreground: 240 5.9% 10%;
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+    --accent: 240 4.8% 95.9%;
+    --accent-foreground: 240 5.9% 10%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 240 5.9% 10%;
+    --radius: 0.5rem;
+    
+    --pink: 335 100% 80%;
+    --pink-dark: 335 100% 70%;
+    --purple: 270 100% 80%;
+    --yellow-soft: 45 100% 80%;
   }
-  a:hover {
-    color: #747bff;
+
+  .dark {
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 240 5.9% 10%;
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+    --accent: 240 3.7% 15.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 240 4.9% 83.9%;
   }
-  button {
-    background-color: #f9f9f9;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  .pink {
+    color: #F4A7BB;
+  }
+  
+  .bg-pink {
+    background-color: #F4A7BB;
+  }
+
+  .bg-pink-dark {
+    background-color: #E78FA3;
+  }
+  
+  .border-pink {
+    border-color: #F4A7BB;
+  }
+
+  .text-pink {
+    color: #F4A7BB;
+  }
+
+  .text-pink-dark {
+    color: #E78FA3;
+  }
+  
+  .bg-purple {
+    background-color: #D8B4FE;
+  }
+  
+  .text-purple {
+    color: #A78BFA;
+  }
+
+  .bg-yellow-soft {
+    background-color: #FDE68A;
+  }
+
+  .section-padding {
+    @apply py-20;
+  }
+  
+  .gradient-text {
+    @apply bg-gradient-to-r from-pink to-purple inline-block text-transparent bg-clip-text;
+  }
+  
+  @keyframes float {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+  
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  /* Typing cursor animation */
+  .typing-cursor::after {
+    content: '|';
+    display: inline-block;
+    color: #F4A7BB;
+    animation: blink 1s step-end infinite;
+    margin-left: 3px;
+  }
+  
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+  }
+  
+  /* Button fill animation - enhanced for all buttons */
+  .fill-animation {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+  }
+  
+  .fill-animation::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+    z-index: -1;
+  }
+  
+  .fill-animation:hover::before {
+    width: 100%;
+  }
+
+  /* Button fill animation for bordered buttons */
+  .fill-animation-border {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+  }
+  
+  .fill-animation-border::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: rgba(244, 167, 187, 0.1);
+    transition: all 0.3s ease;
+    z-index: -1;
+  }
+  
+  .fill-animation-border:hover::before {
+    width: 100%;
+  }
+  
+  /* Skill carousel styling */
+  .skill-carousel {
+    padding: 1.5rem 0;
+    overflow-x: hidden;
+  }
+  
+  .skill-item {
+    display: inline-block;
+    margin: 0 0.25rem;
+    padding: 0.75rem 1.5rem;
+    transition: all 0.3s ease;
+  }
+  
+  .skill-item:hover {
+    transform: translateY(-5px) scale(1.1);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    position: relative;
+  }
+
+  /* Code colors for the typing animation */
+  .code-keyword {
+    color: #D946EF;
+  }
+  
+  .code-function {
+    color: #33C3F0;
+  }
+  
+  .code-string {
+    color: #8B5CF6;
+  }
+  
+  .code-bracket {
+    color: #F97316;
+  }
+  
+  .code-comment {
+    color: #7E69AB;
   }
 }
