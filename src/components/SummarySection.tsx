@@ -47,7 +47,7 @@ const SummarySection = () => {
             <div className="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 border border-pink/10">
               <div className="aspect-video overflow-hidden">
                 <img
-                  src="/freshcoa.png"
+                  src="/freshcoat.png"
                   alt="Fresh Coat"
                   className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
                 />
