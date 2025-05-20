@@ -21,6 +21,27 @@ const SkillCarousel = () => {
     "Canva",
   ];
 
+  const skillIcons: Record<string, string> = {
+    "HTML & CSS": "/icons/html-css.svg",
+    JavaScript: "/icons/javascript.svg",
+    TypeScript: "/icons/typescript.svg",
+    React: "/icons/react.svg",
+    "Next.js": "/icons/nextjs.svg",
+    'Node.js': "/icons/nodejs.svg",
+    'Tailwind CSS': "/icons/tailwind.svg",
+    Bootstrap: "/icons/bootstrap.png",
+    'Responsive Design': "/icons/responsive-design.png",
+    Git: "/icons/github.svg",
+    "Postman": "/icons/postman.svg",
+    "WinScp": "/icons/winscp.png",
+    "SwipperJS": "/icons/swipperjs.png",
+    "EmailJS": "/icons/emailjs.png",
+    "Adobe Photoshop": "/icons/photoshop.png",
+    "Adobe Illustrator": "/icons/illustrator.png",
+    'Canva': "/icons/canva.png",
+  };
+
+
   const carouselRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -70,9 +91,10 @@ const SkillCarousel = () => {
         {skills.map((skill, index) => (
           <span
             key={`skill-${index}`}
-            className="bg-white px-6 py-3 rounded-full border border-pink/20 shadow-sm hover:shadow-md hover:border-pink transition-all duration-300 skill-item"
+            className="flex flex-col items-center justify-center bg-white px-6 py-4 rounded-3xl border border-pink/20 shadow-sm hover:shadow-md hover:border-pink transition-all duration-300 skill-item min-w-max"
           >
-            {skill}
+            <img src={skillIcons[skill]} alt={skill} className="w-12 h-12 mb-2 object-contain" />
+            <span className="text-center text-sm font-medium">{skill}</span>
           </span>
         ))}
       </div>

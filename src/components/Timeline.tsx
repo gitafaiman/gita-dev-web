@@ -9,6 +9,12 @@ const Timeline = () => {
       institution: "Touro College",
       period: "2021 - 2023",
       description: "Studied core programming concepts, data structures, algorithms, and modern web technologies.",
+    }, {
+      id: 2,
+      title: "Bachelor's in Computer Science",
+      institution: "Touro College",
+      period: "2021 - 2023",
+      description: "Studied core programming concepts, data structures, algorithms, and modern web technologies.",
     },
     {
       id: 2,
