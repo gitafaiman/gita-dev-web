@@ -47,15 +47,15 @@ const SummarySection = () => {
             <div className="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 border border-pink/10">
               <div className="aspect-video overflow-hidden">
                 <img
-                  src="/chaya.png"
-                  alt="E-commerce Platform"
+                  src="/freshcoa.png"
+                  alt="Fresh Coat"
                   className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
                 />
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-semibold mb-2">Portfolio Website</h3>
                 <p className="text-muted-foreground mb-4 line-clamp-2">
-                  A creative portfolio website for a graphic designer with smooth animations and gallery features.
+                  A creative portfolio website for a painting and drywall company with smooth animations and gallery features.
                 </p>
               </div>
             </div>
@@ -64,8 +64,8 @@ const SummarySection = () => {
             <div className="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 border border-pink/10">
               <div className="aspect-video overflow-hidden">
                 <img
-                  src="/snake.png"
-                  alt="Task Management App"
+                  src="/snakegame.png"
+                  alt="Snake Game"
                   className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
                 />
               </div>
