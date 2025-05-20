@@ -1,20 +1,19 @@
-import React from "react";
-import { Briefcase, School, Calendar } from "lucide-react";
+import { Briefcase, Calendar, School } from "lucide-react";
 
 const Timeline = () => {
   const education = [
     {
       id: 1,
-      title: "Bachelor's in Computer Science",
+      title: "Bachelor's in Health Sciences",
       institution: "Touro College",
-      period: "2021 - 2023",
-      description: "Studied core programming concepts, data structures, algorithms, and modern web technologies.",
+      period: "2018 - 2021",
+      description: "",
     }, {
       id: 2,
       title: "Bachelor's in Computer Science",
       institution: "Touro College",
       period: "2021 - 2023",
-      description: "Studied core programming concepts, data structures, algorithms, and modern web technologies.",
+      description: "Completed a Bachelor of Health Sciences with a minor in Psychology, gaining foundational knowledge in healthcare, research, and human biology.",
     },
     {
       id: 2,
@@ -36,11 +35,11 @@ const Timeline = () => {
     },
     {
       id: 2,
-      title: "Full Stack Developer",
-      company: "Trackatic",
-      period: "2023 - Present",
+      title: "Front-End Developer",
+      company: "Evelt",
+      period: "2023 - 2024",
       description:
-        "I optimize backend processes and enhance frontend features to improve performance and user experience, including generating automated PDF and Excel reports using Node.js and Puppeteer.",
+        " Collaborated with front-end and back-end teams to implement new features, debug issues, and enhance website functionality",
     },
   ];
 
