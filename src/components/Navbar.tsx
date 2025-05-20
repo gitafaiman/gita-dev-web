@@ -36,7 +36,7 @@ const Navbar = () => {
       <div className="flex items-center justify-between">
         {/* Logo */}
         <Link to="/" className="text-2xl font-bold font-poppins">
-          <span className="gradient-text">Rivki.dev</span>
+          <span className="gradient-text">Gita.dev</span>
         </Link>
 
         {/* Desktop Menu */}

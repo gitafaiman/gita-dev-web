@@ -1,5 +1,5 @@
-import React, { useState } from "react";
 import { ExternalLink, Github } from "lucide-react";
+import { useState } from "react";
 
 type Project = {
   id: number;
@@ -18,65 +18,65 @@ const Portfolio = () => {
   const projects: Project[] = [
     {
       id: 1,
-      title: "Portfolio Website",
-      description: "A creative portfolio website for a graphic designer with smooth animations and gallery features.",
-      image: "/chaya.png",
-      tags: ["React", "Tailwind"],
-      liveUrl: "https://chaya-designs.netlify.app/",
-      githubUrl: "https://github.com/rivkicobersy/chaya-designs",
+      title: "Fresh Coat",
+      description: "A creative portfolio website for a painting and drywall company with smooth animations and gallery features.",
+      image: "/freshcoat.png",
+      tags: ["React", "TypeScript", "Tailwind"],
+      liveUrl: "https://freshcoat.netlify.app/",
+      githubUrl: "https://github.com/gitafaiman/fresh-coat",
       category: "frontend",
     },
     {
       id: 2,
       title: "Snake Game",
       description: "A classic Snake game, featuring smooth controls, score tracking, and a retro-inspired design.",
-      image: "/snake.png",
-      tags: ["React", "CSS"],
-      liveUrl: "https://snakie-game.netlify.app/",
-      githubUrl: "https://github.com/rivkicobersy/snake-game",
+      image: "/snakegame.png",
+      tags: ["React", "JavaScript", "CSS", "HTML5 Audio"],
+      liveUrl: "https://snakiegame.netlify.app/",
+      githubUrl: "https://github.com/gitafaiman/snake-game",
       category: "frontend",
     },
     {
       id: 3,
-      title: "Ecommerce App",
+      title: "Rochel Leah Health Kinesiologist",
       description:
-        "A responsive and modern eCommerce, featuring product listings,  shopping cart, and smooth user navigation.",
-      image: "/shop.png",
-      tags: ["React", "Tailwind"],
-      liveUrl: "https://rivkis-ecommerce.netlify.app/",
-      githubUrl: "https://github.com/rivkicobersy/ecommerce-app",
+        "A sleek, responsive portfolio website designed for a practicing kinesiologist with a focus on user experience.",
+      image: "/hk.png",
+      tags: ["React", "TypeScript", "Tailwind"],
+      liveUrl: "https://rochelleah.netlify.app/",
+      githubUrl: "https://github.com/gitafaiman/rochel-leah-health-kinesiologist",
       category: "frontend",
     },
 
     {
       id: 4,
       title: "Personal Website",
-      description: "A interactive personal site  featuring Swiper-powered carousel, and contact functionality.",
-      image: "/rivki.png",
-      tags: ["React", "Swiper", "EmailJS", "styled-components"],
-      liveUrl: "https://rivki-cobersy-website.netlify.app/",
-      githubUrl: "https://github.com/rivkicobersy/rivki-cobersy-website",
+      description: "An interactive personal site featuring Swiper-powered carousel, and EmailJS contact functionality.",
+      image: "/personalwebsite.png",
+      tags: ["React", "JavaScript", "Swiper", "EmailJS", "styled-components"],
+      liveUrl: "https://gita-faiman.netlify.app/",
+      githubUrl: "https://github.com/gitafaiman/gita-website",
       category: "frontend",
     },
     {
       id: 5,
-      title: "News Aggregator API",
-      description: "A RESTful API that collects news from various sources and categorizes them based on content.",
+      title: "NutriPlan",
+      description: "A modern and responsive web app that helps users easily create, organize, and manage their meal plans.",
       image:
-        "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      tags: ["Node.js", "Express", "MongoDB", "NLP"],
-      liveUrl: "#",
-      githubUrl: "#",
-      category: "backend",
+        "/nutriplan.png",
+      tags: ["Node.js", "React", "TypeScript", "Tailwind"],
+      liveUrl: "https://meal-planner-website.netlify.app/",
+      githubUrl: "https://github.com/gitafaiman/meal-planner",
+      category: "frontend",
     },
     {
       id: 6,
       title: "This Website",
       description: "A fun website for a web devloper with smooth animations and gallery features.",
       image: "/this.png",
-      tags: ["React", "Tailwind"],
-      liveUrl: "https://rivki-cobersy.netlify.app/",
-      githubUrl: "https://github.com/rivkicobersy/rivki-website",
+      tags: ["React", "TypeScript", "Tailwind", "EmailJS"],
+      liveUrl: "https://gitafaiman.netlify.app/",
+      githubUrl: "https://github.com/gitafaiman/gita-dev-web",
       category: "frontend",
     },
   ];
@@ -106,11 +106,10 @@ const Portfolio = () => {
             <button
               key={category}
               onClick={() => filterProjects(category)}
-              className={`px-5 py-2 rounded-full text-sm font-medium transition-all duration-300 fill-animation ${
-                activeFilter === category
-                  ? "bg-pink text-white shadow-md"
-                  : "bg-white border border-pink/20 text-foreground hover:bg-pink/10"
-              }`}
+              className={`px-5 py-2 rounded-full text-sm font-medium transition-all duration-300 fill-animation ${activeFilter === category
+                ? "bg-pink text-white shadow-md"
+                : "bg-white border border-pink/20 text-foreground hover:bg-pink/10"
+                }`}
             >
               {category.charAt(0).toUpperCase() + category.slice(1)}
             </button>

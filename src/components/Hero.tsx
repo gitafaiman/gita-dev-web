@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 const Hero = () => {
   const [displayText, setDisplayText] = useState("");
@@ -57,7 +57,7 @@ const Hero = () => {
               <span className="gradient-text">Turning ideas into interactive experiences</span>
             </h1>
             <p className="text-lg text-muted-foreground animate-fade-in delay-100">
-              Hi! I'm Rivki, a passionate frontend developer creating beautiful, responsive websites that solve real
+              Hi! I'm Gita, a passionate frontend developer creating beautiful, responsive websites that solve real
               problems.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 pt-4 animate-fade-in delay-200">

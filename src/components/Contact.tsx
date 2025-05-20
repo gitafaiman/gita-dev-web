@@ -1,6 +1,6 @@
 import { useToast } from "@/hooks/use-toast";
 import emailjs from "emailjs-com";
-import { Github, Linkedin, Mail, MapPin, Phone, Send } from "lucide-react";
+import { Github, Linkedin, Mail, Phone, Send } from "lucide-react";
 import React, { useState } from "react";
 
 const Contact = () => {
@@ -33,7 +33,7 @@ const Contact = () => {
       subject: formData.subject,
       message: formData.message,
     };
-    const userID = import.meta.env.VITE_EMAIL_JS_USER_ID;
+    const userID = import.meta.env.VITE_EMAIL_JS_PUBLIC_KEY;
     const serviceID = import.meta.env.VITE_EMAIL_JS_SERVICE_ID;
     const templateID = import.meta.env.VITE_EMAIL_JS_TEMPLATE_ID;
     emailjs.send(serviceID, templateID, templateParams, userID).then(
@@ -88,10 +88,10 @@ const Contact = () => {
                 <div>
                   <h4 className="font-medium">Email</h4>
                   <a
-                    href="mailto:rcobersyus@gmail.com"
+                    href="mailto:reachglevin@gmail.com"
                     className="text-muted-foreground hover:text-pink transition-colors"
                   >
-                    rcobersyus@gmail.com
+                    reachglevin@gmail.com
                   </a>
                 </div>
               </div>
@@ -101,8 +101,8 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="font-medium">Phone</h4>
-                  <a href="tel:+1234567890" className="text-muted-foreground hover:text-pink transition-colors">
-                    +27 (76) 084-6933
+                  <a href="tel:+12149300691" className="text-muted-foreground hover:text-pink transition-colors">
+                    +1 (214) 930-0691
                   </a>
                 </div>
               </div>
@@ -113,7 +113,7 @@ const Contact = () => {
               <p className="mb-4 opacity-90">Follow me on social media or check out my latest projects.</p>
               <div className="flex space-x-4">
                 <a
-                  href="https://github.com/rivkicobersy"
+                  href="https://github.com/gitafaiman"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-white/20 p-2 rounded-full hover:bg-white/40 transition-colors"
@@ -121,7 +121,7 @@ const Contact = () => {
                   <Github />
                 </a>
                 <a
-                  href="https://www.linkedin.com/in/rivkacobersy/"
+                  href="https://www.linkedin.com/in/reachglevin/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-white/20 p-2 rounded-full hover:bg-white/40 transition-colors"
@@ -129,7 +129,7 @@ const Contact = () => {
                   <Linkedin />
                 </a>
                 <a
-                  href="mailto:rcobersyus@gmail.com"
+                  href="mailto:reachglevin@gmail.com"
                   className="bg-white/20 p-2 rounded-full hover:bg-white/40 transition-colors"
                 >
                   <Mail />

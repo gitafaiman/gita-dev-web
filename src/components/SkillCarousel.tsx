@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 
 const SkillCarousel = () => {
   const skills = [
@@ -9,10 +9,16 @@ const SkillCarousel = () => {
     "Next.js",
     "Node.js",
     "Tailwind CSS",
+    "Bootstrap",
     "Responsive Design",
     "Git",
-    "Redux",
-    "Express.js",
+    "Postman",
+    "WinScp",
+    "SwipperJS",
+    "EmailJS",
+    "Adobe Photoshop",
+    "Adobe Illustrator",
+    "Canva",
   ];
 
   const carouselRef = useRef<HTMLDivElement>(null);

@@ -31,7 +31,7 @@ const SummarySection = () => {
             <div className="md:w-1/3">
               <div className="relative">
                 <div className="absolute top-3 left-3 w-full h-full border-2 border-pink rounded-2xl z-0"></div>
-                <img src="/image.png" alt="Rivki Cobersy" className="relative w-full object-cover rounded-2xl z-10" />
+                <img src="/image.png" alt="Gita Faiman" className="relative w-full object-cover rounded-2xl z-10" />
               </div>
             </div>
           </div>

@@ -19,7 +19,7 @@ const About = () => {
                   <div className="aspect-[4/5] bg-[url('/image.png')] bg-cover bg-center rounded-2xl">
                     <div className="w-full h-full backdrop-brightness-[1.02] flex items-end">
                       <div className="bg-white/80 backdrop-blur-sm w-full p-6 rounded-t-3xl">
-                        <h3 className="text-xl font-semibold mb-2">Rivki Cobersy</h3>
+                        <h3 className="text-xl font-semibold mb-2">Gita Faiman</h3>
                         <p className="text-muted-foreground">Frontend Developer</p>
                       </div>
                     </div>
@@ -30,7 +30,7 @@ const About = () => {
           </div>
 
           <div className="space-y-8 animate-fade-in">
-            <h3 className="text-2xl font-semibold mb-6 gradient-text">Hello! I'm Rivki</h3>
+            <h3 className="text-2xl font-semibold mb-6 gradient-text">Hello! I'm Gita</h3>
             <p className="text-muted-foreground leading-relaxed">
               I'm the developer behind this website—a passionate full-stack developer always looking for ways to blend
               creativity and functionality through code. From crafting clean designs to solving complex problems, I
@@ -42,7 +42,7 @@ const About = () => {
               refine my skills.
             </p>
             <h5 className="text-l font-semibold mb-2 gradient-text">
-              <a href="/Rivki Cobersy Resume.pdf" target="_blank">
+              <a href="/Gita Faiman Resume.pdf" target="_blank">
                 View My Resume
               </a>
             </h5>

@@ -1,11 +1,10 @@
-import React, { useEffect, useState } from "react";
-import { Heart, Instagram, Linkedin, Github, Mail } from "lucide-react";
-import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
+import { Github, Linkedin, Mail } from "lucide-react";
+import { useEffect, useState } from "react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   const [displayText, setDisplayText] = useState("");
-  const fullText = "Rivki.dev";
+  const fullText = "Gita.dev";
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
@@ -47,7 +46,7 @@ const Footer = () => {
 
           <div className="flex flex-col space-y-4 mb-6 md:mb-0">
             <a
-              href="https://github.com/rivkicobersy"
+              href="https://github.com/gitafaiman"
               target="_blank"
               rel="noopener noreferrer"
               className="text-foreground hover:text-pink transition-colors p-2 fill-animation-border rounded-full"
@@ -56,7 +55,7 @@ const Footer = () => {
             </a>
 
             <a
-              href="https://www.linkedin.com/in/rivkacobersy/"
+              href="https://www.linkedin.com/in/reachglevin/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-foreground hover:text-pink transition-colors p-2 fill-animation-border rounded-full"
@@ -64,7 +63,7 @@ const Footer = () => {
               <Linkedin />
             </a>
             <a
-              href="mailto:rcobersyus@gmail.com"
+              href="mailto:reachglevin@gmail.com"
               className="text-foreground hover:text-pink transition-colors p-2 fill-animation-border rounded-full"
             >
               <Mail />
@@ -74,14 +73,9 @@ const Footer = () => {
 
         <div className="border-t border-muted mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-muted-foreground text-sm mb-4 md:mb-0">
-            © {currentYear} Rivki Cobersy. All rights reserved.
+            © {currentYear} Gita Faiman. All rights reserved.
           </p>
 
-          <div className="flex items-center text-sm text-muted-foreground">
-            <span>Made with</span>
-            <Heart size={16} className="mx-1 text-pink animate-pulse" />
-            <span>by Rivki Cobersy</span>
-          </div>
         </div>
       </div>
     </footer>
