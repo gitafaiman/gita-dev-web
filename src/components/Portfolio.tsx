@@ -73,7 +73,7 @@ const Portfolio = () => {
       id: 6,
       title: "This Website",
       description: "A fun website for a web devloper with smooth animations and gallery features.",
-      image: "/this.png",
+      image: "/thiswebsite.png",
       tags: ["React", "TypeScript", "Tailwind", "EmailJS"],
       liveUrl: "https://gitafaiman.netlify.app/",
       githubUrl: "https://github.com/gitafaiman/gita-dev-web",
