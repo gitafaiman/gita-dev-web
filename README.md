@@ -1,51 +1,93 @@
-# Personal Portfolio – Gita Faiman
+# Dr. Faiman's Website
 
-🌐 [Visit Site](https://gitafaiman.netlify.app/)
+**Live Demo:** [https://drfaimans.netlify.app](https://drfaimans.netlify.app)
 
-This is my personal website, built to showcase my web development work, projects, and skills. It’s fast, fully responsive, and designed with accessibility and user experience in mind.
+A fast, modern, and responsive website built for Dr. Faiman using a streamlined frontend tech stack. The site is built with a focus on performance, accessibility, and developer productivity.
+
+---
 
 ## 🚀 Tech Stack
 
-- **[Vite](https://vitejs.dev/)** – Lightning-fast build tool and development server
-- **[React](https://reactjs.org/)** – Component-based UI library for building interactive interfaces
-- **[TypeScript](https://www.typescriptlang.org/)** – Strongly typed superset of JavaScript for improved code quality
-- **[Tailwind CSS](https://tailwindcss.com/)** – Utility-first CSS framework for styling with ease and consistency
-- **[shadcn/ui](https://ui.shadcn.com/)** – Accessible, customizable component library built on top of Tailwind CSS
+- **[Vite](https://vitejs.dev/):** Lightning-fast build tool for modern web projects
+- **[TypeScript](https://www.typescriptlang.org/):** Type-safe development for robust JavaScript code
+- **[React](https://react.dev/):** Component-based library for building interactive UIs
+- **[shadcn/ui](https://ui.shadcn.com/):** Accessible, customizable UI components built with Radix and Tailwind
+- **[Tailwind CSS](https://tailwindcss.com/):** Utility-first CSS framework for responsive and modern styling
 
-## 📁 Features
+---
 
-- Smooth scrolling and dynamic section highlighting
-- Interactive sliders and animated UI elements
-- Custom hooks for navigation and scroll behavior
-- Modular file structure for scalability and maintainability
-- Fully responsive design for all screen sizes
-- Protected contact form with [EmailJS](https://www.emailjs.com/) and reCAPTCHA
+## 🧩 Features
 
-## 🛠 Project Structure
+- Fully responsive layout for mobile, tablet, and desktop
+- Accessible components via `shadcn/ui`
+- Clean and modern design using Tailwind CSS
+- Optimized for speed and performance with Vite
+- Modular component architecture
 
-```
-src/
-│
-├── common/
-│   ├── components/   // Reusable components like NavBar, Footer, Blob, Slider
-│   ├── hooks/        // Custom React hooks
-│
-├── pages/            // Page sections: Home, About, Portfolio, Contact
-├── App.tsx           // Main app component with routing
-├── main.tsx          // App entry point
-```
+---
 
-## 📦 Getting Started
+## 🛠️ Setup & Development
 
-Clone the repository and run the app locally:
+### Clone the repo
 
 ```bash
-git clone https://github.com/gitafaiman/your-repo-name.git
-cd your-repo-name
-npm install
-npm run dev
+git clone https://github.com/gitafaiman/dr-faimans.git
+cd dr-faimans
 ```
 
-## 📬 Contact
+### Install dependencies
 
-Want to connect or collaborate? Reach out via the contact form on the site or [email me](mailto:reachglevin@example.com).
+```bash
+npm install
+# or
+yarn install
+```
+
+### Start the dev server
+
+```bash
+npm run dev
+# or
+yarn dev
+```
+
+The app will be running at `http://localhost:5173`.
+
+---
+
+## 📦 Build for Production
+
+```bash
+npm run build
+# or
+yarn build
+```
+
+Output will be in the `dist` directory, ready to be deployed.
+
+---
+
+## 📁 Project Structure
+
+```
+├── public/
+├── src/
+│   ├── components/
+│   ├── pages/
+│   ├── styles/
+│   ├── App.tsx
+│   └── main.tsx
+├── index.html
+├── tailwind.config.ts
+├── tsconfig.json
+└── vite.config.ts
+```
+
+---
+
+## 📝 License
+
+This project is open source and available under the [MIT License](https://opensource.org/licenses/MIT).
+Feel free to use, modify, and distribute it for personal or commercial purposes.
+
+---

@@ -71,6 +71,16 @@ const Portfolio = () => {
     },
     {
       id: 6,
+      title: "Dr. Faiman's",
+      description: "A fast, responsive website for a chiropractor who also sells natural wellness products, featuring Google Maps.",
+      image: "/drfaimans.png",
+      tags: ["React", "TypeScript", "Tailwind", "EmailJS"],
+      liveUrl: "https://drfaimans.netlify.app/",
+      githubUrl: "https://github.com/gitafaiman/dr-faimans",
+      category: "frontend",
+    },
+    {
+      id: 7,
       title: "This Website",
       description: "A fun website for a web devloper with smooth animations and gallery features.",
       image: "/thiswebsite.png",
